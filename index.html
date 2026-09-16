@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sara Ahmed — Data Analyst</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-bar"><span></span></div>
+        <p>Initializing dashboard<span class="dots">...</span></p>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">SA</div>
+            <div>
+                <h2>Sara Ahmed</h2>
+                <p>Data Analyst</p>
+            </div>
+        </div>
+        <nav>
+            <a href="#overview" class="nav-link active"><span>▣</span> Overview</a>
+            <a href="#about" class="nav-link"><span>◉</span> About</a>
+            <a href="#skills" class="nav-link"><span>◈</span> Skills</a>
+            <a href="#dashboards" class="nav-link"><span>▤</span> Dashboards</a>
+            <a href="#education" class="nav-link"><span>✦</span> Education</a>
+            <a href="#contact" class="nav-link"><span>✉</span> Contact</a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="live-clock" id="clock">--:--:--</div>
+            <div class="status"><span class="dot"></span> Available for work</div>
+        </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <div class="topbar-title">
+                <h1 id="pageTitle">Overview</h1>
+                <p>Analytics Portfolio Dashboard</p>
+            </div>
+            <div class="topbar-right">
+                <div class="search"><input type="text" placeholder="Search..." id="search" /></div>
+                <img src="assets/sara.jpg" alt="Sara" class="avatar" onerror="this.style.display='none'" />
+            </div>
+        </header>
+
+        <!-- OVERVIEW -->
+        <section id="overview" class="section active-section">
+            <div class="hero">
+                <div class="hero-text">
+                    <p class="eyebrow">// welcome to my portfolio</p>
+                    <h1>Hi, I'm <span class="grad">Sara Ahmed</span></h1>
+                    <h2 class="typing"><span id="typed"></span><span class="cursor">|</span></h2>
+                    <p class="hero-desc">
+                        I'm Sara, a Computer Science student and aspiring Data Analyst who enjoys
+                        transforming raw data into clear dashboards, meaningful insights, and
+                        practical solutions. I work with Excel, Power BI, Power Query, SQL, and
+                        Python, with a focus on data cleaning, visualization, and dashboard
+                        development. I believe good analytics should make data easier to
+                        understand — not more complicated.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#dashboards" class="btn primary">View Dashboards →</a>
+                        <a href="#contact" class="btn ghost">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <img src="assets/sara.jpg" alt="Sara Ahmed" />
+                    <div class="hero-card-info">
+                        <span class="pill">● Data Analyst</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KPI Cards -->
+            <div class="kpi-grid">
+                <div class="kpi">
+                    <div class="kpi-icon">▤</div>
+                    <h3 class="counter" data-target="3">0</h3>
+                    <p>Dashboards Built</p>
+                </div>
+                <div class="kpi">
+                    <div class="kpi-icon">◈</div>
+                    <h3 class="counter" data-target="5">0</h3>
+                    <p>Core Skills</p>
+                </div>
+                <div class="kpi">
+                    <div class="kpi-icon">✦</div>
+                    <h3 class="counter" data-target="100">0</h3>
+                    <p>% Data Cleaned</p>
+                </div>
+                <div class="kpi">
+                    <div class="kpi-icon">↗</div>
+                    <h3 class="counter" data-target="24">0</h3>
+                    <p>/7 Curiosity</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <h2 class="section-title"><span>01</span> About Me</h2>
+            <div class="about-grid">
+                <div class="card">
+                    <h3>Who I am</h3>
+                    <p>
+                        I'm a data analyst who enjoys working with messy data. I like taking
+                        raw, unstructured datasets — the kind with missing values, duplicate
+                        rows, inconsistent dates, and wrong entries — and turning them into
+                        something clean, organized, and reliable. Only after that do I build
+                        dashboards, because a good dashboard is only as strong as the data
+                        behind it.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>What I do</h3>
+                    <ul class="tick-list">
+                        <li>Clean messy and inconsistent datasets</li>
+                        <li>Handle null values and incorrect inputs</li>
+                        <li>Standardize date formats and data types</li>
+                        <li>Remove duplicates and validate data</li>
+                        <li>Explore data to find patterns and outliers</li>
+                        <li>Build interactive dashboards in Power BI and Excel</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2 class="section-title"><span>02</span> Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Python</h4>
+                    <div class="bar"><span data-width="90%"></span></div>
+                    <p>Pandas, NumPy, Matplotlib, Scikit-learn</p>
+                </div>
+                <div class="skill-card">
+                    <h4>SQL</h4>
+                    <div class="bar"><span data-width="88%"></span></div>
+                    <p>Joins, Aggregations, Window Functions</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Power BI</h4>
+                    <div class="bar"><span data-width="92%"></span></div>
+                    <p>DAX, Data Modeling, Interactive Reports</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Excel</h4>
+                    <div class="bar"><span data-width="95%"></span></div>
+                    <p>Pivot Tables, Power Query, Dashboards</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Machine Learning</h4>
+                    <div class="bar"><span data-width="75%"></span></div>
+                    <p>Regression, Classification, Clustering</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DASHBOARDS -->
+        <section id="dashboards" class="section">
+            <h2 class="section-title"><span>03</span> Interactive Dashboards</h2>
+            <p class="section-sub">Click a tab to load the dashboard below. All views are interactive.</p>
+
+            <div class="tabs">
+                <button class="tab active" data-tab="d1">▤ Sales Analysis — Power BI</button>
+                <button class="tab" data-tab="d2">▤ Excel Sales Dashboard</button>
+                <button class="tab" data-tab="d3">▤ Third Dashboard</button>
+            </div>
+
+            <!-- Dashboard 1 -->
+            <div class="tab-panel active" id="d1">
+                <div class="dash-meta">
+                    <div>
+                        <h3>Sales Analysis — Power BI</h3>
+                        <p>End-to-end sales analysis with full data cleaning pipeline.</p>
+                    </div>
+                    <a target="_blank" class="btn ghost small"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiYzA0NWFiYjEtYmM5OS00MDY1LTg1ZWUtZjc5YjJkZTlhYmQzIiwidCI6IjIwODJkZTQ2LTFhZmEtNGI2NC1hNDQwLTY1NThmODBlOTg0MCIsImMiOjh9">
+                        Open Full Report ↗
+                    </a>
+                </div>
+
+                <div class="problem-box">
+                    <h4>🧹 Data Problems I Solved</h4>
+                    <div class="problem-grid">
+                        <div class="prob"><span>✓</span> Standardized inconsistent date formats into a unified format
+                        </div>
+                        <div class="prob"><span>✓</span> Handled null / missing values using imputation &amp; removal
+                            strategies</div>
+                        <div class="prob"><span>✓</span> Detected &amp; corrected incorrect user inputs</div>
+                        <div class="prob"><span>✓</span> Removed duplicate rows to ensure data integrity</div>
+                        <div class="prob"><span>✓</span> Cleaned &amp; trimmed text columns for consistent joins</div>
+                        <div class="prob"><span>✓</span> Built a reusable Power Query cleaning pipeline</div>
+                    </div>
+                </div>
+
+                <div class="embed-wrap">
+                    <iframe title="Sales Analysis — Power BI"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiYzA0NWFiYjEtYmM5OS00MDY1LTg1ZWUtZjc5YjJkZTlhYmQzIiwidCI6IjIwODJkZTQ2LTFhZmEtNGI2NC1hNDQwLTY1NThmODBlOTg0MCIsImMiOjh9"
+                        frameborder="0" allowfullscreen="true">
+                    </iframe>
+                    <p class="embed-note">If the report asks for sign-in, click <b>Open Full Report ↗</b> above.</p>
+                </div>
+            </div>
+
+            <!-- Dashboard 2 -->
+            <div class="tab-panel" id="d2">
+                <div class="dash-meta">
+                    <div>
+                        <h3>Excel Sales Dashboard</h3>
+                        <p>Fully interactive Excel dashboard with slicers &amp; pivot charts.</p>
+                    </div>
+                </div>
+                <div class="embed-wrap">
+                    <iframe title="Excel Dashboard"
+                        src="https://intrast-my.sharepoint.com/personal/sa_ahm2020350_intrast_com_eg/_layouts/15/Doc.aspx?sourcedoc={aa42d2f1-6e9a-401c-891e-47633c1a906b}&action=embedview&AllowTyping=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+                    <p class="embed-note">Interactive Excel view — use slicers and filters directly inside.</p>
+                </div>
+            </div>
+
+            <!-- Dashboard 3 -->
+            <div class="tab-panel" id="d3">
+                <div class="dash-meta">
+                    <div>
+                        <h3>Third Dashboard</h3>
+                        <p>Additional interactive sales analysis view.</p>
+                    </div>
+                </div>
+                <div class="embed-wrap">
+                    <iframe title="Dashboard 3"
+                        src="https://intrast-my.sharepoint.com/personal/sa_ahm2020350_intrast_com_eg/_layouts/15/Doc.aspx?sourcedoc={2dc946ba-6cf0-49b7-a7ec-f3769687c3ab}&action=embedview&AllowTyping=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+                    <p class="embed-note">Interactive view — filters and slicers enabled.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <h2 class="section-title"><span>04</span> Education</h2>
+            <div class="timeline">
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <h4>Bachelor's Degree — Computer and Data Science / Data Analytics</h4>
+                        <span>Alexandria University</span>
+                        <p>Focused on data analysis, databases, cyber, and machine learning fundamentals.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <h4>Self-Driven Data Analytics Track</h4>
+                        <span>Online Certifications &amp; Projects</span>
+                        <p>Completed hands-on projects in Python, SQL, Power BI, and Excel — building real dashboards
+                            from raw data.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h2 class="section-title"><span>05</span> Contact</h2>
+            <div class="contact-grid">
+                <a class="contact-card" href="mailto:saraahmedalibassiouni@gmail.com">
+                    <div class="cc-icon">✉</div>
+                    <h4>Email</h4>
+                    <p>saraahmedalibassiouni@gmail.com</p>
+                </a>
+                <a class="contact-card" target="_blank" href="https://www.linkedin.com/in/sara-ahmed111">
+                    <div class="cc-icon">in</div>
+                    <h4>LinkedIn</h4>
+                    <p>/in/sara-ahmed111</p>
+                </a>
+                <a class="contact-card" target="_blank" href="https://github.com/saraahmedaliahmedbassiouni-wq">
+                    <div class="cc-icon">⌥</div>
+                    <h4>GitHub</h4>
+                    <p>saraahmedaliahmedbassiouni-wq</p>
+                </a>
+            </div>
+            <p class="footer-note">© <span id="year"></span> Sara Ahmed — Data Analyst Portfolio</p>
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
